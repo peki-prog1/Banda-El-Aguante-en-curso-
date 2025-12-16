@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Aguante | Banda Oficial</title>
+
+    <!-- SEO -->
+    <meta name="description" content="El Aguante - Banda de cuarteto. Shows, contrataciones y videos oficiales.">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXX');
+    </script>
+
+    <!-- Meta Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+    <div class="nav-logo">
+        <img src="IMG_1205.PNG" alt="El Aguante">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#youtube-latest">YouTube</a></li>
+        <li><a href="#tiktok">TikTok</a></li>
+        <li><a href="#contacto">Contrataciones</a></li>
+    </ul>
+</nav>
+
+<!-- HERO VIDEO -->
+<header class="hero hero-video">
+    <video autoplay muted loop playsinline poster="hero-poster.jpg">
+        <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="fade-in">EL AGUANTE</h1>
+        <p class="fade-in delay-1">A lo Clásico</p>
+        <button class="btn pulse" id="btnScroll">Ver más</button>
+    </div>
+</header>
+
+<!-- VIDEOS -->
+<section id="videos" class="section reveal">
+    <h2>Videos Destacados</h2>
+    <div class="video-grid">
+        <iframe src="https://www.youtube.com/embed/VRPHX4GG53Y" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/cpysmzWgt6A" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/p-kKlaO7gDQ" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- YOUTUBE AUTOMÁTICO -->
+<section id="youtube-latest" class="section dark reveal">
+    <h2>Último Video</h2>
+    <div class="youtube-latest">
+        <iframe
+            src="https://www.youtube.com/embed?listType=playlist&list=UUwqmfQRvInwNhyUqy5H4Z0A"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<section class="section dark reveal">
+    <h2>TikTok</h2>
+
+    <div class="tiktok-preview-grid">
+        <a href="https://www.tiktok.com/@elaguante_ok/video/7582389312445107476" target="_blank" class="tiktok-card">
+            <img src="tiktok1.jpg" alt="TikTok El Aguante">
+            <span>Ver en TikTok</span>
+        </a>
+
+        <a href="https://www.tiktok.com/@elaguante_ok/video/7533414816367545606" target="_blank" class="tiktok-card">
+            <img src="tiktok2.jpg" alt="TikTok El Aguante">
+            <span>Ver en TikTok</span>
+        </a>
+    </div>
+</section>
+
+
+
+
+<!-- CONTACTO -->
+<section id="contacto" class="section reveal">
+    <h2>Contrataciones</h2>
+
+    <form class="form" id="contactForm">
+        <input name="nombre" type="text" placeholder="Nombre" required />
+        <input name="email" type="email" placeholder="Correo" required />
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <button class="btn" type="submit">Enviar</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© El Aguante 2025 · Contrataciones Oficiales</p>
+</footer>
+
+<!-- WHATSAPP -->
+<a 
+    href="https://wa.me/5493510000000?text=Hola%20quiero%20contratar%20a%20El%20Aguante" 
+    class="whatsapp-float"
+    target="_blank"
+    aria-label="WhatsApp Contrataciones"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path d="M380.9 97.1C339-6.5 206.4-28.8 125.5 52.2c-58.2 58.2-70.3 146.9-30.1 217.5L64 448l182.6-30.6c66.5 35.5 148.4 23.2 202.4-30.8 81-81 58.7-213.6-34.1-259.5z"/>
+    </svg>
+</a>
+
+<script src="jv.js"></script>
+</body>
+</html>
